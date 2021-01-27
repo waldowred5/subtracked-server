@@ -5,7 +5,6 @@ class CreateSubscriptions < ActiveRecord::Migration[6.0]
       t.string :logo_image
       t.integer :amount
       t.text :description
-      t.references :user, null: false, foreign_key: true
 
       t.timestamps
     end
