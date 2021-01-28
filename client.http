@@ -1,10 +1,28 @@
-# Create User
+### Create User
 POST http://localhost:3000/api/auth/sign_up
 Content-Type: application/json
 
 {
-    "first_name": "Daniel2",
-    "email": "daniel2@test.com",
+    "first_name": "Daniel4",
+    "email": "daniel4@test.com",
     "password": "123456",
     "password_confirmation": "123456"
+}
+
+### Sign in with correct user
+POST http://localhost:3000/api/auth/sign_in
+Content-Type: application/json
+
+{
+    "email": "daniel4@test.com",
+    "password": "123456"
+}
+
+### Sign in with incorrect user
+POST http://localhost:3000/api/auth/sign_in
+Content-Type: application/json
+
+{
+    "email": "daniel@incorrect-test.com",
+    "password": "123456incorrect"
 }
