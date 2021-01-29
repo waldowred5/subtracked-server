@@ -1,13 +1,14 @@
 ### Index Method
 GET http://localhost:3000/api/subscriptions
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MTE5Nzg4MTksInN1YiI6NH0.uu4TmrN9eA2FCI3bgTBe0TMGQUiMy80tgSriXOwDNCI
 
 ### Successfully Create User
 POST http://localhost:3000/api/auth/sign_up
 Content-Type: application/json
 
 {
-    "first_name": "Daniel5",
-    "email": "daniel5@test.com",
+    "first_name": "Daniel6",
+    "email": "daniel6@test.com",
     "password": "123456",
     "password_confirmation": "123456"
 }
@@ -15,6 +16,7 @@ Content-Type: application/json
 ### Successfully Create Subscription
 POST http://localhost:3000/api/subscriptions
 Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MTE5Nzg4MTksInN1YiI6NH0.uu4TmrN9eA2FCI3bgTBe0TMGQUiMy80tgSriXOwDNCI
 
 {
     "name": "Stan",
@@ -36,15 +38,17 @@ Content-Type: application/json
     "user_id": "no_id"
 }
 
-### Show Subscription 1
-GET http://localhost:3000/api/subscriptions/1
+### Show Subscription 7
+GET http://localhost:3000/api/subscriptions/7
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MTE5Nzg4MTksInN1YiI6NH0.uu4TmrN9eA2FCI3bgTBe0TMGQUiMy80tgSriXOwDNCI
 
 ### Unsuccessfully Show Subscription 1000
 GET http://localhost:3000/api/subscriptions/1000
 
-### Update Subscription 1
-PUT http://localhost:3000/api/subscriptions/1
+### Update Subscription 7
+PUT http://localhost:3000/api/subscriptions/7
 Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MTE5Nzg4MTksInN1YiI6NH0.uu4TmrN9eA2FCI3bgTBe0TMGQUiMy80tgSriXOwDNCI
 
 {
     "logo_image": "Successful update"

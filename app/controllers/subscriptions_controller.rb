@@ -1,13 +1,15 @@
 class SubscriptionsController < ApplicationController
+    before_action :authenticate_user
     before_action :set_subscription, only: [:show, :update, :destroy]
+    before_action :check_ownership, only: [:update, :destroy]
 
     def index
-        @subscriptions = Subscription.all
+        @subscriptions = current_user.subscriptions.all
         render json: @subscriptions
     end
 
     def create
-        @subscription = Subscription.create subscription_params
+        @subscription = current_user.subscriptions.create subscription_params
         if @subscription.errors.any?
             render json: @subscription.errors, status: :unprocessable_entity
         else
@@ -16,7 +18,7 @@ class SubscriptionsController < ApplicationController
     end
 
     def show
-        render json: @subscription
+        render json: @subscription.transform_subscription
     end
 
     def update
@@ -43,6 +45,12 @@ class SubscriptionsController < ApplicationController
             @subscription = Subscription.find(params[:id])
         rescue
             render json: {error: "Subscription not found"}, status: 404
+        end
+    end
+
+    def check_ownership
+        if current_user.id != @subscription.user.id
+            render json: {error: "Sorry, you don't have permission to view this"}, status: 401
         end
     end
 end
