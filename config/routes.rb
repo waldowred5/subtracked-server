@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   scope '/api' do
     get '/subscriptions', to: 'subscriptions#index'
     post '/subscriptions', to: 'subscriptions#create'
-    get '/subscriptions', to: 'subscriptions#show'
+    get '/subscriptions/:id', to: 'subscriptions#show'
     put '/subscriptions/:id', to: 'subscriptions#update'
     delete '/subscriptions/:id', to: 'subscriptions#destroy'
 

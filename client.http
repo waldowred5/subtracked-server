@@ -1,13 +1,60 @@
-### Create User
+### Index Method
+GET http://localhost:3000/api/subscriptions
+
+### Successfully Create User
 POST http://localhost:3000/api/auth/sign_up
 Content-Type: application/json
 
 {
-    "first_name": "Daniel4",
-    "email": "daniel4@test.com",
+    "first_name": "Daniel5",
+    "email": "daniel5@test.com",
     "password": "123456",
     "password_confirmation": "123456"
 }
+
+### Successfully Create Subscription
+POST http://localhost:3000/api/subscriptions
+Content-Type: application/json
+
+{
+    "name": "Stan",
+    "logo_image": "stan.com",
+    "amount": 1800,
+    "description": "TV and Movie Streaming Platform",
+    "user_id": 1
+}
+
+### Unsuccessfully Create Subscription
+POST http://localhost:3000/api/subscriptions
+Content-Type: application/json
+
+{
+    "name": "Stan",
+    "logo_image": "stan.com",
+    "amount": 1800,
+    "description": "TV and Movie Streaming Platform",
+    "user_id": "no_id"
+}
+
+### Show Subscription 1
+GET http://localhost:3000/api/subscriptions/1
+
+### Unsuccessfully Show Subscription 1000
+GET http://localhost:3000/api/subscriptions/1000
+
+### Update Subscription 1
+PUT http://localhost:3000/api/subscriptions/1
+Content-Type: application/json
+
+{
+    "logo_image": "Successful update"
+}
+
+### Delete Subscription 1
+DELETE http://localhost:3000/api/subscriptions/1
+
+### Unsuccessfully delete Subscription 1000
+DELETE http://localhost:3000/api/subscriptions/1000
 
 ### Sign in with correct user
 POST http://localhost:3000/api/auth/sign_in
@@ -26,3 +73,4 @@ Content-Type: application/json
     "email": "daniel@incorrect-test.com",
     "password": "123456incorrect"
 }
+
