@@ -50,7 +50,7 @@ class SubscriptionsController < ApplicationController
 
     def check_ownership
         if current_user.id != @subscription.user.id
-            render json: {error: "Sorry, you don't have permission to view this"}, status: 401
+            render json: {error: "Sorry, you don't have permission to change this"}, status: 401
         end
     end
 end
