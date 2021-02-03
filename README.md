@@ -127,6 +127,16 @@
     <img src="./docs/img/trello-screenshots/trello-jan-24-21.png" alt="Trello Screenshot Day 7" />
     - Day 8:
     <img src="./docs/img/trello-screenshots/trello-jan-25-21.png" alt="Trello Screenshot Day 8" />
+    - Day 10:
+    <img src="./docs/img/trello-screenshots/trello-jan-27-21.png" alt="Trello Screenshot Day 10" />
+    - Day 11:
+    <img src="./docs/img/trello-screenshots/trello-jan-28-21.png" alt="Trello Screenshot Day 11" />
+    - Day 12:
+    <img src="./docs/img/trello-screenshots/trello-jan-29-21.png" alt="Trello Screenshot Day 12" />
+    - Day 14:
+    <img src="./docs/img/trello-screenshots/trello-jan-31-21.png" alt="Trello Screenshot Day 14" />
+    - Day 16:
+    <img src="./docs/img/trello-screenshots/trello-feb-2-21.png" alt="Trello Screenshot Day 16" />
 </details>
 
 <br/>
