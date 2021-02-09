@@ -4,6 +4,11 @@
 
 <br/>
 
+Front-End: 
+
+Back-End: https://subtracked-server.herokuapp.com/
+- Requires authentication token so can only be accessed via front-end application
+
 <br/>
 
 ## Github:
@@ -97,13 +102,45 @@ Front-End:
 <br/>
 
 Back-End:
-- Knock (Authentication)
-- Bcrypt (Password Hashing)
-- Rack-Cors (Cross-Origin Resource Sharing Support)
+- Knock
+    - Knock is an authentication solution for API-only rails applications. Knock is stateless and authenticates users with JSON web tokens.
+- Bcrypt
+    - Bcrypt is a ruby gem that creates secure passwords. It is based on the hashing algorithm created by Niels Provos and David Mazières of the OpenBSD Project.
+- Rack-CORS
+    - Rack-CORS is a middleware that provides Cross-Origin Resource Sharing Support, allowing web applications to make AJAX calls across domains.
 
 Front-End:
-- React-Bootstrap (CSS Stylesheet Library Built for React)
-- React Router (Declarative Routing)
+- React-Bootstrap
+    - React-Bootstrap is a CSS component library built for React, to replace the outdated bootstrap library for JavaScript. It provides a large number of pre-configured styles for components to create responsive and modern looking websites with ease.
+- React Router
+    - React Router is a collection of routing components that make building website navigation in React declarative.
+
+<br/>
+
+## Testing:
+
+<br/>
+
+End-User Testing:
+- Screen captures can be found in the following folder: './spec/end_user_testing'
+
+Back-End Testing:
+- Testing suites can be found for user and subscription models in the following folder: './spec/models' and can be run with the command: `bin/rspec`
+
+<br/>
+
+## Project Management Methodology:
+
+<br/>
+
+During the development of 'SubTracked', the project was managed with the Kanban style. 
+- After initial user requirements were identified, the application was split into two sections, back-end and front-end
+- These applications were created separately and tasks were created in Trello, being designated to one of 4 states:
+    - Backlog: For all tasks that were ideated during the brainstorming stage of development
+    - In Progress: For all tasks currently being worked on
+    - Testing: For completed tasks that were ready to be reviewed by another member of the team
+    - Complete: For tasks that have been built and marked by the team as a working, successfully completed feature or application milestone
+
 
 <br/>
 
