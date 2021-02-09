@@ -1,5 +1,23 @@
 # SubTracked-T3A2-A
 
+## Deployed Site:
+
+<br/>
+
+<br/>
+
+## Github:
+
+<br/>
+
+Back-End:
+- https://github.com/waldowred5/subtracked-server
+
+Front-End:
+- https://github.com/Finbob12/subtracked-react
+
+<br/>
+
 ## Description:
 
 <br/>
@@ -74,6 +92,21 @@
 
 <br/>
 
+## Libraries:
+
+<br/>
+
+Back-End:
+- Knock (Authentication)
+- Bcrypt (Password Hashing)
+- Rack-Cors (Cross-Origin Resource Sharing Support)
+
+Front-End:
+- React-Bootstrap (CSS Stylesheet Library Built for React)
+- React Router (Declarative Routing)
+
+<br/>
+
 ## User Stories:
 
 <br/>
@@ -137,6 +170,18 @@
     <img src="./docs/img/trello-screenshots/trello-jan-31-21.png" alt="Trello Screenshot Day 14" />
     - Day 16:
     <img src="./docs/img/trello-screenshots/trello-feb-2-21.png" alt="Trello Screenshot Day 16" />
+    - Day 17:
+    <img src="./docs/img/trello-screenshots/trello-feb-3-21.png" alt="Trello Screenshot Day 17" />
+    - Day 18:
+    <img src="./docs/img/trello-screenshots/trello-feb-4-21.png" alt="Trello Screenshot Day 18" />
+    - Day 20:
+    <img src="./docs/img/trello-screenshots/trello-feb-6-21.png" alt="Trello Screenshot Day 20" />
+    - Day 21:
+    <img src="./docs/img/trello-screenshots/trello-feb-7-21.png" alt="Trello Screenshot Day 21" />
+    - Day 22:
+    <img src="./docs/img/trello-screenshots/trello-feb-8-21.png" alt="Trello Screenshot Day 22" />
+    - Day 23:
+    <img src="./docs/img/trello-screenshots/trello-feb-9-21.png" alt="Trello Screenshot Day 23" />
 </details>
 
 <br/>

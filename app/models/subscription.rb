@@ -1,6 +1,7 @@
 class Subscription < ApplicationRecord
     belongs_to :user
 
+    # Method for converting subscription data into a more useable form
     def transform_subscription
         return {
             subscription_owner: self.user.first_name,

@@ -7,10 +7,10 @@ Rails.application.routes.draw do
     put '/subscriptions/:id', to: 'subscriptions#update'
     delete '/subscriptions/:id', to: 'subscriptions#destroy'
 
-    # scope '/auth' do
-    #   post '/sign_up', to: 'users#create'
-    #   post '/sign_in', to: 'users#sign_in'
-    # end
+    scope '/auth' do
+      post '/sign_up', to: 'users#create'
+      post '/sign_in', to: 'users#sign_in'
+    end
   end
 
   post '/login',    to: 'sessions#create'
