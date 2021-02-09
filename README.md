@@ -9,6 +9,11 @@ Front-End: https://eloquent-shirley-58d253.netlify.app/
 Back-End: https://subtracked-server.herokuapp.com/
 - Requires authentication token so can only be accessed via front-end application
 
+NB!
+- The live site authentication is currently not working, so to run the applications locally, change the following:
+    - In React application, file: './src/config/subAPI.js'
+    - Change the 'baseURL' from 'https://subtracked-server.herokuapp.com/' to 'http://localhost:3001'
+
 <br/>
 
 ## Github:
