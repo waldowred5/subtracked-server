@@ -4,7 +4,7 @@
 
 <br/>
 
-Front-End: 
+Front-End: https://eloquent-shirley-58d253.netlify.app/
 
 Back-End: https://subtracked-server.herokuapp.com/
 - Requires authentication token so can only be accessed via front-end application
@@ -178,6 +178,8 @@ During the development of 'SubTracked', the project was managed with the Kanban 
 ## Trello:
 
 <br/>
+
+Live Trello Board: https://trello.com/b/jQZ376VG/full-stack-app-subtracked
 
 <details>
     <summary>
