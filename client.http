@@ -1,9 +1,9 @@
 ### Index Method
-GET http://localhost:3000/api/subscriptions
+GET http://localhost:3001/api/subscriptions
 Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MTE5Nzg4MTksInN1YiI6NH0.uu4TmrN9eA2FCI3bgTBe0TMGQUiMy80tgSriXOwDNCI
 
 ### Successfully Create User
-POST http://localhost:3000/api/auth/sign_up
+POST http://localhost:3001/api/auth/sign_up
 Content-Type: application/json
 
 {
@@ -14,7 +14,7 @@ Content-Type: application/json
 }
 
 ### Successfully Create Subscription
-POST http://localhost:3000/api/subscriptions
+POST http://localhost:3001/api/subscriptions
 Content-Type: application/json
 Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MTE5Nzg4MTksInN1YiI6NH0.uu4TmrN9eA2FCI3bgTBe0TMGQUiMy80tgSriXOwDNCI
 
@@ -27,7 +27,7 @@ Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MTE5Nzg4M
 }
 
 ### Unsuccessfully Create Subscription
-POST http://localhost:3000/api/subscriptions
+POST http://localhost:3001/api/subscriptions
 Content-Type: application/json
 
 {
@@ -39,14 +39,14 @@ Content-Type: application/json
 }
 
 ### Show Subscription 7
-GET http://localhost:3000/api/subscriptions/7
+GET http://localhost:3001/api/subscriptions/7
 Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MTE5Nzg4MTksInN1YiI6NH0.uu4TmrN9eA2FCI3bgTBe0TMGQUiMy80tgSriXOwDNCI
 
 ### Unsuccessfully Show Subscription 1000
-GET http://localhost:3000/api/subscriptions/1000
+GET http://localhost:3001/api/subscriptions/1000
 
 ### Update Subscription 7
-PUT http://localhost:3000/api/subscriptions/7
+PUT http://localhost:3001/api/subscriptions/7
 Content-Type: application/json
 Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MTE5Nzg4MTksInN1YiI6NH0.uu4TmrN9eA2FCI3bgTBe0TMGQUiMy80tgSriXOwDNCI
 
@@ -55,22 +55,22 @@ Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MTE5Nzg4M
 }
 
 ### Delete Subscription 1
-DELETE http://localhost:3000/api/subscriptions/1
+DELETE http://localhost:3001/api/subscriptions/1
 
 ### Unsuccessfully delete Subscription 1000
-DELETE http://localhost:3000/api/subscriptions/1000
+DELETE http://localhost:3001/api/subscriptions/1000
 
 ### Sign in with correct user
-POST http://localhost:3000/api/auth/sign_in
+POST http://localhost:3001/api/auth/sign_in
 Content-Type: application/json
 
 {
-    "email": "daniel4@test.com",
+    "email": "john@example.com",
     "password": "123456"
 }
 
 ### Sign in with incorrect user
-POST http://localhost:3000/api/auth/sign_in
+POST http://localhost:3001/api/auth/sign_in
 Content-Type: application/json
 
 {

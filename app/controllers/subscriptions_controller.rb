@@ -18,6 +18,7 @@ class SubscriptionsController < ApplicationController
     end
 
     def show
+        # Leverage subscription model method to make data more usable for front end rendering
         render json: @subscription.transform_subscription
     end
 
@@ -40,6 +41,7 @@ class SubscriptionsController < ApplicationController
         params.require(:subscription).permit(:name, :logo_image, :amount, :description, :user_id)
     end
 
+
     def set_subscription
         begin
             @subscription = Subscription.find(params[:id])
@@ -48,6 +50,7 @@ class SubscriptionsController < ApplicationController
         end
     end
 
+    # Reject access to subscription if not owned by current_user
     def check_ownership
         if current_user.id != @subscription.user.id
             render json: {error: "Sorry, you don't have permission to change this"}, status: 401
